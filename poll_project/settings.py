@@ -78,10 +78,20 @@ WSGI_APPLICATION = 'poll_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'d808lknhd58rgs',
+        'USER':'uijdjdbivbhkhd',
+        'PASSWORD':'b5da41367765ea39ae941e6cfee45c516f214f51ecde721bd0ec1b455ceadae6',
+        'HOST':'ec2-3-222-30-53.compute-1.amazonaws.com',
+        'PORT':'5432',
     }
 }
 
