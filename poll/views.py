@@ -38,7 +38,7 @@ def vote(request,poll_id):
 	    elif selected_option == 'option3':
 	        poll.option_three_count += 1
 	    else:
-	        return HttpResponse(400, 'Invalid form option choosed')
+	        return HttpResponse(400, 'Invalid form option choose')
 
 	    poll.save()
 	    return redirect('results', poll.id)
